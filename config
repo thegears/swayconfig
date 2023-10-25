@@ -1,0 +1,38 @@
+set $mod Mod4
+
+### MINE ###
+bindsym $mod+r exec --no-startup-id rofi -show drun
+bindsym Mod1+Tab focus right
+bindsym Mod1+q focus left
+bindsym Mod1+e focus right
+
+font pango:monospace 0
+titlebar_border_thickness 0                                                     
+titlebar_padding 0
+
+bindsym $mod+Return exec alacritty
+
+bindsym $mod+q kill
+
+bindsym $mod+f fullscreen
+
+bindsym $mod+s layout stacking
+bindsym $mod+w layout tabbed
+bindsym $mod+e layout toggle split
+
+bindsym $mod+Shift+space floating toggle
+
+bindsym $mod+space focus mode_toggle
+
+
+bindsym $mod+1 workspace 1
+bindsym $mod+2 workspace 2
+bindsym $mod+4 workspace 4
+
+bindsym $mod+Shift+1 move container to workspace 1
+bindsym $mod+Shift+2 move container to workspace 2
+bindsym $mod+Shift+4 move container to workspace 4
+
+input type:keyboard { 
+    xkb_layout tr
+}
