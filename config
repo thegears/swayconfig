@@ -9,6 +9,7 @@ bindsym Mod1+e focus right
 font pango:monospace 0
 titlebar_border_thickness 0                                                     
 titlebar_padding 0
+for_window [class="^.*"] border pixel 0
 
 bindsym $mod+Return exec alacritty
 
