@@ -11,7 +11,7 @@ titlebar_border_thickness 0
 titlebar_padding 0
 for_window [class="^.*"] border pixel 0
 
-bindsym $mod+Return exec alacritty
+bindsym $mod+Return exec alacritty -o font.size=7
 
 bindsym $mod+q kill
 
