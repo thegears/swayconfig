@@ -13,6 +13,8 @@ for_window [class="^.*"] border pixel 0
 
 bindsym $mod+Return exec alacritty -o font.size=7
 
+bindsym Print exec grim -g "$(slurp -d)" - | wl-copy
+
 bindsym $mod+q kill
 
 bindsym $mod+w layout tabbed
