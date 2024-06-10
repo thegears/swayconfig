@@ -1,17 +1,18 @@
 set $mod Mod4
 
 ### MINE ###
-bindsym $mod+r exec --no-startup-id rofi -show drun
+bindsym $mod+r exec --no-startup-id rofi -show run
 bindsym Mod1+Tab focus right
 bindsym Mod1+q focus left
 bindsym Mod1+e focus right
 
-font pango:monospace 0
-titlebar_border_thickness 0                                                     
-titlebar_padding 0
-for_window [class="^.*"] border pixel 0
+xwayland disable
+workspace_layout tabbed
+default_border none
+default_floating_border none
+disable_titlebar yes
 
-bindsym $mod+Return exec alacritty -o font.size=7
+bindsym $mod+Return exec foot
 
 bindsym Print exec --no-startup-id grim -g "$(slurp -d)" - | wl-copy
 
@@ -28,10 +29,12 @@ bindsym $mod+space focus mode_toggle
 bindsym $mod+1 workspace 1
 bindsym $mod+2 workspace 2
 bindsym $mod+4 workspace 4
+bindsym $mod+5 workspace 5
 
 bindsym $mod+Shift+1 move container to workspace 1
 bindsym $mod+Shift+2 move container to workspace 2
 bindsym $mod+Shift+4 move container to workspace 4
+bindsym $mod+Shift+5 move container to workspace 5
 
 input type:keyboard { 
     xkb_layout tr
