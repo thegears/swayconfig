@@ -1,0 +1,1 @@
+with sway-disable-titlebar
